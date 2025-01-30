@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "sans-serif";
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.currency-converter {
+  background-color: #3b3b3b;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+}
+.currency-converter .converter-title {
+  text-align: center;
+}
+.currency-converter .converter-form {
+  margin-top: 2rem;
+}
+.currency-converter .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.currency-converter .form-group .form-input,
+.currency-converter .form-group .form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+.currency-converter .form-group .form-label {
+  margin-bottom: 0.5rem;
+}
+.currency-converter .form-group .currency-selection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.currency-converter .form-currency-selection-group{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-currency-selection-group .currency-selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0.6rem 0;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 0.2rem;
+    gap: 1rem;
+}
+.form-currency-selection-group .currency-selection img{
+    width: 50px;
+}
+.form-currency-selection-group .currency-selection .currency-dropdown{
+    outline: none;
+    border: none;
+    padding: 0 0.2rem;
+    background-color: transparent;
+    color: #ffffff
+}
+.form-currency-selection-group .currency-selection .currency-dropdown option{
+    background-color: #1e1e1e;
+
+}
+.icon-swap{
+    cursor: pointer;
+}
+.converter-form .form-button{
+  cursor: pointer;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px #ffffff;
+  margin: 2rem 0;
+  transition: all 0.2s ease-in-out;
+}
+.converter-form .form-button:hover{
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+}
+
+.converter-form  .exchange-rate-resault{
+  letter-spacing: 0.6px;
+  text-align: center;
+  font-weight: 600;
+  
+}
